@@ -1,0 +1,18 @@
+---
+import Header from "../components/common/Header.astro";
+import Layout from "../layouts/Layout.astro";
+
+---
+
+<Layout title="404 - No encontrado">
+  <Header />
+  <main class="h-screen w-full flex mt-16 justify-center">
+    <section class="w-max h-max flex flex-col justify-center border border-neutral-300 bg-white shadow-sm rounded-lg p-8">
+      <h1 class=" text-center text-5xl font-normal mb-4">Error 404</h1>
+      <p>La página la cual has intentado ingresar no se ha encontrado.</p>
+      <button class="m-9">
+        <a class="text-white  bg-primary-400 hover:bg-primary-600 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none" href="/">Ir a página principal</a>
+      </button>
+    </section>
+  </main>
+</Layout>
