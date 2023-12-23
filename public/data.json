@@ -1,0 +1,49 @@
+{
+    "asignaturas": [
+        {
+            "nombre": "Ingeniería de software",
+            "opciones": [
+                {
+                    "dia": "Martes",
+                    "hora": "08:00"
+                },
+                {
+                    "dia": "Viernes",
+                    "hora": "09:30"
+                }
+            ],
+            "profesor": "Armando Tamponi",
+            "sala": "MCSR - 308"
+        },
+        {
+            "nombre": "Sistemas operativos",
+            "opciones": [
+                {
+                    "dia": "Lunes",
+                    "hora": "08:00"
+                },
+                {
+                    "dia": "Miércoles",
+                    "hora": "09:30"
+                }
+            ],
+            "profesor": "Ricardo Bravo",
+            "sala": "MALC - 303"
+        },
+        {
+            "nombre": "Métodos de optimización",
+            "opciones": [
+                {
+                    "dia": "Jueves",
+                    "hora": "08:00"
+                },
+                {
+                    "dia": "Martes",
+                    "hora": "09:30"
+                }
+            ],
+            "profesor": "Germán Toledo",
+            "sala": "MCSR - 303"
+        }
+    ]
+}
