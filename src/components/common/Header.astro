@@ -1,19 +1,37 @@
 <header>
-    <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
+    <nav class="fixed w-full bg-white border-gray-200 px-4 lg:px-6 py-2.5 z-50">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-            <a class="text-primary-500 self-center text-xl font-semibold whitespace-nowrap" href="">Epico</a>
-            <div>
-                <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                    <li><a class="block py-2 px-4 text-black" href="#">Home</a></li>
+            <div class="flex justify-center z-40 bg-white">
+                <button onclick="toggleSideBar()" class="visible lg:hidden mr-3"><img src="menu.svg"/></button>
+                <a class="text-primary-500 self-center text-xl font-semibold whitespace-nowrap" href="">Epico</a>
+            </div>
+            <div id="sidebar" class="absolute z-30 w-2/4 lg:animate-none top-0  left-[-100%]  border-neutral-400 lg:w-auto lg:static h-screen lg:h-auto bg-white">
+                <ul class="lg:flex flex-col mt-4 font-medium lg:flex-row py-8 lg:py-0 lg:space-x-8 lg:mt-0">
+                    <li><a class="block py-2 px-4 text-black" href="/">Home</a></li>
                     <li><a class="block py-2 px-4 text-black" href="#">Nosotros</a></li>
                     <li><a class="block py-2 px-4 text-black" href="#">Beneficios</a></li>
                     <li><a class="block py-2 px-4 text-black" href="#">Contacto</a></li>
                 </ul>
             </div>
             <div>
-                <button class=" bg"></button>
                 <a class="text-white bg-primary-400 hover:bg-primary-600 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none" href="/login">Login</a>
             </div>
         </div>
     </nav>
-</header>   
+    </div>
+</header> 
+<script is:inline>
+    function toggleSideBar(){
+        let sidebar = document.getElementById('sidebar');
+        if (sidebar.classList.contains('animate-open-sidebar')) {
+            sidebar.classList.remove('animate-open-sidebar');
+            sidebar.classList.add('animate-close-sidebar');
+        } else if (sidebar.classList.contains('animate-close-sidebar')) {
+            sidebar.classList.remove('animate-close-sidebar');
+            sidebar.classList.add('animate-open-sidebar');
+        } else {
+            sidebar.classList.add('animate-open-sidebar');
+            sidebar.classList.remove('left-[-100%]');
+        }
+    }
+</script>  
