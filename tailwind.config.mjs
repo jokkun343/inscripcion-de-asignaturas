@@ -18,6 +18,20 @@ export default {
 					'900': '#10466a',
 					'950': '#0b2c46',
 				},
+			},
+			keyframes: {
+				open: {
+					'0%': {left: '-100%'},
+					'100%': {left: '0'},
+				},
+				close: {
+					'0%': {left: '0'},
+					'100%': {left: '-100%'},
+				}
+			},
+			animation: {
+				'open-sidebar': 'open 0.5s ease-in-out forwards',
+				'close-sidebar': 'close 0.5s ease-in-out forwards',
 			}
 		},
 	},
