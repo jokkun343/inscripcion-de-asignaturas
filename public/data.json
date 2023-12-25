@@ -44,6 +44,66 @@
             ],
             "profesor": "Germán Toledo",
             "sala": "MCSR - 303"
+        },
+        {
+            "nombre": "Matemáticas avanzadas",
+            "opciones": [
+                {
+                    "dia": "Lunes",
+                    "hora": "11:00"
+                },
+                {
+                    "dia": "Miércoles",
+                    "hora": "12:30"
+                }
+            ],
+            "profesor": "Elena Rodríguez",
+            "sala": "CMB - 201"
+        },
+        {
+            "nombre": "Programación en C++",
+            "opciones": [
+                {
+                    "dia": "Miércoles",
+                    "hora": "14:00"
+                },
+                {
+                    "dia": "Viernes",
+                    "hora": "15:30"
+                }
+            ],
+            "profesor": "Carlos Martínez",
+            "sala": "LAB - 112"
+        },
+        {
+            "nombre": "Investigación",
+            "opciones": [
+                {
+                    "dia": "Martes",
+                    "hora": "11:00"
+                },
+                {
+                    "dia": "Jueves",
+                    "hora": "12:30"
+                }
+            ],
+            "profesor": "Ana López",
+            "sala": "AULA - 205"
+        },
+        {
+            "nombre": "Bases de datos",
+            "opciones": [
+                {
+                    "dia": "Jueves",
+                    "hora": "09:30"
+                },
+                {
+                    "dia": "Viernes",
+                    "hora": "12:30"
+                }
+            ],
+            "profesor": "Miguel Sánchez",
+            "sala": "LAB - 208"
         }
     ]
 }
