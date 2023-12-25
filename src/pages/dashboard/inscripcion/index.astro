@@ -1,8 +1,10 @@
 ---
 import Horario from '../../../components/inscripcion/Horario.svelte';
+import Oferta from '../../../components/inscripcion/Oferta.svelte';
 import Layout from '../../../layouts/Layout.astro'
 ---
 
 <Layout title='Inscripción de asignaturas'>
+    <Oferta client:only="svelte"/>
     <Horario client:only="svelte"/>
 </Layout>
