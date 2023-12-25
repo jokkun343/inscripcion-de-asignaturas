@@ -5,6 +5,8 @@ import Layout from '../../../layouts/Layout.astro'
 ---
 
 <Layout title='Inscripción de asignaturas'>
-    <Oferta client:only="svelte"/>
-    <Horario client:only="svelte"/>
+    <main class="bg-primary-100 h-[91vh] flex gap-4 p-6 overflow-hidden" >
+        <Oferta client:load/>
+        <Horario client:load/>
+    </main>
 </Layout>
