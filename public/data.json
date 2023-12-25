@@ -1,13 +1,16 @@
 {
     "asignaturas": [
         {
+            "id": 0,
             "nombre": "Ingeniería de software",
             "opciones": [
                 {
+                    "id": 0,
                     "dia": "Martes",
                     "hora": "08:00"
                 },
                 {
+                    "id": 1,
                     "dia": "Viernes",
                     "hora": "09:30"
                 }
@@ -16,13 +19,16 @@
             "sala": "MCSR - 308"
         },
         {
+            "id": 1,
             "nombre": "Sistemas operativos",
             "opciones": [
                 {
+                    "id": 0,
                     "dia": "Lunes",
                     "hora": "08:00"
                 },
                 {
+                    "id": 1,
                     "dia": "Miércoles",
                     "hora": "09:30"
                 }
@@ -31,13 +37,16 @@
             "sala": "MALC - 303"
         },
         {
+            "id": 2,
             "nombre": "Métodos de optimización",
             "opciones": [
                 {
+                    "id": 0,
                     "dia": "Jueves",
                     "hora": "08:00"
                 },
                 {
+                    "id": 1,
                     "dia": "Martes",
                     "hora": "09:30"
                 }
@@ -46,13 +55,16 @@
             "sala": "MCSR - 303"
         },
         {
+            "id": 3,
             "nombre": "Matemáticas avanzadas",
             "opciones": [
                 {
+                    "id": 0,
                     "dia": "Lunes",
                     "hora": "11:00"
                 },
                 {
+                    "id": 1,
                     "dia": "Miércoles",
                     "hora": "12:30"
                 }
@@ -61,13 +73,16 @@
             "sala": "CMB - 201"
         },
         {
+            "id": 4,
             "nombre": "Programación en C++",
             "opciones": [
                 {
+                    "id": 0,
                     "dia": "Miércoles",
                     "hora": "14:00"
                 },
                 {
+                    "id": 1,
                     "dia": "Viernes",
                     "hora": "15:30"
                 }
@@ -76,13 +91,16 @@
             "sala": "LAB - 112"
         },
         {
+            "id": 5,
             "nombre": "Investigación",
             "opciones": [
                 {
+                    "id": 0,
                     "dia": "Martes",
                     "hora": "11:00"
                 },
                 {
+                    "id": 1,
                     "dia": "Jueves",
                     "hora": "12:30"
                 }
@@ -91,13 +109,16 @@
             "sala": "AULA - 205"
         },
         {
+            "id": 6,
             "nombre": "Bases de datos",
             "opciones": [
                 {
+                    "id": 0,
                     "dia": "Jueves",
                     "hora": "09:30"
                 },
                 {
+                    "id": 1,
                     "dia": "Viernes",
                     "hora": "12:30"
                 }
