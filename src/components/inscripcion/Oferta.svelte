@@ -1,9 +1,9 @@
 <script>
     import data from '../../../public/data.json';
+    import { setListaAsignaturas } from './asignaturasSeleccionadas.js'
 
     let asignaturas = data.asignaturas;
-    
-    let seleccionadas = [];
+    let asignaturasSeleccionadas = [];
 
     function toggleOpcion(index, opcionIndex) {
         const seleccion = {
@@ -14,11 +14,13 @@
             sala: asignaturas[index].sala
         };
 
-        seleccionadas = seleccionadas.filter(
-            (opcion) => !(opcion.nombre === seleccion.nombre),
+        asignaturasSeleccionadas = asignaturasSeleccionadas.filter(
+            (opcion) => !(opcion.nombre === seleccion.nombre)
         );
 
-        seleccionadas = [...seleccionadas, seleccion];
+        asignaturasSeleccionadas = [...asignaturasSeleccionadas, seleccion];
+
+        setListaAsignaturas(asignaturasSeleccionadas);
     }
 </script>
 
