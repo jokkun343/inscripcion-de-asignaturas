@@ -7,21 +7,30 @@
 	$: asignaturasSeleccionadas = $listaAsignaturas
 
 	function toggleOpcion(index, opcionIndex) {
+		const seleccionada = asignaturas[index]
+
 		const seleccion = {
-			nombre: asignaturas[index].nombre,
-			dia: asignaturas[index].opciones[opcionIndex].dia,
-			hora: asignaturas[index].opciones[opcionIndex].hora,
-			profesor: asignaturas[index].profesor,
-			sala: asignaturas[index].sala
+			id: seleccionada.id,
+			nombre: seleccionada.nombre,
+			opcionId: seleccionada.opciones[opcionIndex].id,
+			dia: seleccionada.opciones[opcionIndex].dia,
+			hora: seleccionada.opciones[opcionIndex].hora,
+			profesor: seleccionada.profesor,
+			sala: seleccionada.sala
 		}
-
-		asignaturasSeleccionadas = asignaturasSeleccionadas.filter(
-			(opcion) => !(opcion.nombre === seleccion.nombre)
-		)
-
-		asignaturasSeleccionadas = [...asignaturasSeleccionadas, seleccion]
-
-		setListaAsignaturas(asignaturasSeleccionadas)
+		// Revisa si ya se ha seleccionado la misma opción.
+		if ($listaAsignaturas.some((s) => s.id === seleccion.id && s.opcionId === seleccion.opcionId)){
+			asignaturasSeleccionadas = asignaturasSeleccionadas.filter((o) => o.id !== seleccion.id);
+			setListaAsignaturas(asignaturasSeleccionadas)
+		}
+		else {
+			asignaturasSeleccionadas = asignaturasSeleccionadas.filter(
+				(opcion) => !(opcion.id === seleccion.id)
+			)
+			asignaturasSeleccionadas = [...asignaturasSeleccionadas, seleccion]
+	
+			setListaAsignaturas(asignaturasSeleccionadas)
+		}
 	}
 </script>
 
@@ -43,7 +52,7 @@
 									name={`asignatura_${index}`}
 									bind:group={asignatura[index]}
 									value={opcion}
-									on:change={() => toggleOpcion(index, opcionIndex)} />
+									on:click={() => toggleOpcion(index, opcionIndex)} />
 								<div
 									class="inline-flex w-full rounded-lg border border-gray-200 bg-white p-3 text-gray-600 ring-2 ring-transparent transition-all hover:bg-gray-100 hover:text-gray-600 hover:shadow peer-checked:border-primary-600 peer-checked:text-primary-600 peer-checked:ring-primary-400">
 									<div class="block">
