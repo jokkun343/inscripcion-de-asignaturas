@@ -1,9 +1,10 @@
 <script>
 	import data from '../../../public/data.json'
+	import { listaAsignaturas } from './asignaturasSeleccionadas.js'
 	import { setListaAsignaturas } from './asignaturasSeleccionadas.js'
 
 	let asignaturas = data.asignaturas
-	let asignaturasSeleccionadas = []
+	$: asignaturasSeleccionadas = $listaAsignaturas
 
 	function toggleOpcion(index, opcionIndex) {
 		const seleccion = {
@@ -24,7 +25,7 @@
 	}
 </script>
 
-<div class="h-full max-h-screen w-1/3 gap-2 overflow-auto rounded-lg border bg-white p-4 shadow">
+<aside class="h-full max-h-screen w-1/3 gap-2 overflow-auto rounded-lg border bg-white p-4 shadow">
 	<h2 class="mb-4 text-center font-bold text-gray-900">Menú de asignaturas</h2>
 	<ul>
 		{#each asignaturas as asignatura, index}
@@ -60,4 +61,4 @@
 			</li>
 		{/each}
 	</ul>
-</div>
+</aside>
