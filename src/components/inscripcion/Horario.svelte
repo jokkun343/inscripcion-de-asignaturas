@@ -27,12 +27,14 @@
 							{#each asignaturasSeleccionadas as asignatura}
 								{#if asignatura.dia === dia && asignatura.hora === hora}
 									<div
-										class=" h-full w-auto overflow-hidden rounded-2xl border-2 border-solid border-primary-600 bg-white p-3 text-center shadow">
-										<p class="my-0 text-base font-bold text-primary-800">{asignatura.nombre}</p>
-										<p class="my-0 text-sm text-gray-500">
-											Profesor {asignatura.profesor}
-										</p>
-										<p class="my-0 text-sm text-gray-500">Sala {asignatura.sala}</p>
+										class="flex justify-between flex-col h-full w-auto overflow-hidden rounded-2xl border-2 border-solid border-primary-600 bg-white p-3 text-center shadow">
+										<p class="my-0 text-sm font-bold text-primary-800">{asignatura.nombre}</p>
+										<div>
+											<p class="my-0 text-sm text-gray-500">
+												Profesor {asignatura.profesor}
+											</p>
+											<p class="my-0 text-sm text-gray-500">Sala {asignatura.sala}</p>
+										</div>
 									</div>
 								{/if}
 							{/each}
