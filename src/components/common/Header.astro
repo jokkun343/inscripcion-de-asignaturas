@@ -1,11 +1,12 @@
+---
+import MenuIcon from "../icons/MenuIcon.astro";
+---
 <header>
 	<nav class="fixed top-0 z-50 w-full border-gray-200 bg-white px-4 py-2 lg:px-6">
 		<div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between">
 			<div class="z-40 flex justify-center bg-white">
 				<button onclick="toggleSideBar()" class="visible mr-3">
-					<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-						<path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"></path>
-                    </svg>
+					<MenuIcon />
 				</button>
 				<a class="self-center whitespace-nowrap text-xl font-semibold text-primary-500" href=""
 					>Epico</a
