@@ -1,6 +1,7 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
 import Header from '../components/common/Header.astro';
+import '@fontsource/poppins';
 
 interface Props {
 	title: string;
@@ -29,7 +30,7 @@ const { title } = Astro.props;
 <style is:global>
 	html {
 		box-sizing: border-box;
-		font-family:'Open Sans',;
+		font-family: 'Poppins', sans-serif, system-ui;
 	}
 
 	*,
