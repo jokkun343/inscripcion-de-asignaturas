@@ -1,15 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import Footer from '../components/common/Footer.astro'
 import Beneficio from '../components/landing-page/Beneficio.astro'
 import CalendarioIcon from '../components/icons/Calendario.astro'
 import RelojArenaIcon from '../components/icons/RelojArena.astro'
 import AyudaIcon from '../components/icons/Ayuda.astro'
+import Testimonio from '../components/landing-page/Testimonio.astro'
 ---
 
 <Layout title="Inscripción de Asignaturas">
-	<main>
-		<section id="inicio" class="bg-white dark:bg-gray-900">
+	<main class="">
+		<section id="inicio" class="bg-white dark:bg-zinc-900 dark:text-white">
 			<div
 				class="mx-auto grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
 				<div class="mr-auto place-self-center lg:col-span-7">
@@ -17,7 +17,7 @@ import AyudaIcon from '../components/icons/Ayuda.astro'
 						class="mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl">
 						Tu portal de <span class="text-primary-500">toma de ramos</span>
 					</h1>
-					<p class="mb-6 max-w-2xl font-light text-gray-600 md:text-lg lg:mb-8 lg:text-xl">
+					<p class="mb-6 max-w-2xl font-light opacity-80 md:text-lg lg:mb-8 lg:text-xl">
 						Simplifica tu trayectoria universitaria con nuestra plataforma de inscripción de
 						asignaturas. Descubre la comodidad y eficiencia en la toma de ramos.
 					</p>
@@ -40,7 +40,7 @@ import AyudaIcon from '../components/icons/Ayuda.astro'
 						</svg></a
 					>
 				</div>
-				<div class="hidden lg:col-span-5 lg:mt-8 lg:flex">
+				<div class="hidden lg:col-span-5 lg:flex">
 					<div
 						class="ml-auto flex aspect-square w-9/12 items-center justify-center rounded-full border-4 border-primary-500 bg-primary-200">
 						<p class="my-auto text-center text-2xl font-bold text-white">Insertar foto del memo</p>
@@ -61,19 +61,86 @@ import AyudaIcon from '../components/icons/Ayuda.astro'
 					<Beneficio
 						beneficio="Optimización"
 						descripcion="Ahorra tiempo y evitando complicaciones innecesarias.">
-						<RelojArenaIcon class="h-8 w-auto" />
+						<RelojArenaIcon class="h-12 w-auto" />
 					</Beneficio>
 					<Beneficio
 						beneficio="Disponibilidad"
 						descripcion="Accede desde cualquier lugar y en cualquier momento.">
-						<CalendarioIcon class="h-8 w-auto" />
+						<CalendarioIcon class="h-12 w-auto" />
 					</Beneficio>
 
 					<Beneficio
 						beneficio="Asistencia"
 						descripcion="Obtén asesoramiento de nuestro equipo atento a tus dudas.">
-						<AyudaIcon class="h-8 w-auto" />
+						<AyudaIcon class="h-12 w-auto" />
 					</Beneficio>
+				</div>
+			</div>
+		</section>
+
+		<section id="estadísticas" class="bg-white dark:bg-zinc-900 dark:text-white">
+			<div
+				class="mx-auto grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
+				<div class="hidden lg:col-span-5 lg:flex">
+					<div
+						class="mr-auto flex aspect-square w-9/12 place-self-center rounded-full border-4 border-primary-500 bg-primary-200">
+						<p class="my-auto text-center text-2xl font-bold text-white">Insertar foto del memo</p>
+					</div>
+				</div>
+				<div class="place-self-center lg:col-span-7">
+					<h1
+						class="mb-6 max-w-2xl text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl">
+						Nuestros números hablan por nosotros.
+					</h1>
+					<div class="mb-6 items-start space-y-4 md:flex md:justify-between md:space-y-0">
+						<div>
+							<p class="text-2xl font-semibold text-primary-500">&lt; 15 min</p>
+							<p>Tiempo de inscripción</p>
+						</div>
+						<div>
+							<p class="text-2xl font-semibold text-primary-500">98%</p>
+							<p>Satisfacción</p>
+						</div>
+						<div>
+							<p class="text-2xl font-semibold text-primary-500">&lt; 30 min</p>
+							<p>Tiempo de respuesta</p>
+						</div>
+					</div>
+					<p class="mb-6 max-w-2xl font-light opacity-80 md:text-lg lg:mb-8 lg:text-xl">
+						Nuestras estadísticas reflejan no solo la efectividad de nuestro sistema, sino también
+						el compromiso continuo de proporcionar a los estudiantes una experiencia académica sin
+						complicaciones y satisfactoria. Estamos orgullosos de ser una herramienta confiable para
+						optimizar tu trayectoria universitaria.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="experiencias" class="bg-primary-50">
+			<div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6">
+				<h2 class="mb-4 text-center text-4xl font-extrabold tracking-tight text-gray-900">
+					Experiencias exitosas
+				</h2>
+				<p class="mb-6 text-center text-gray-600 sm:text-xl">Lo que nuestros usuarios dicen</p>
+				<div class="space-y-8 md:grid md:grid-cols-2 md:gap-8 md:space-y-0 lg:grid-cols-3">
+					<Testimonio
+						autor="Carlos Rueda"
+						puesto="Estudiante DuocUC"
+						descripcion="Gracias a este portal, inscribir mis asignaturas se volvió un proceso increíblemente sencillo. La interfaz es intuitiva, y la asistencia brindada fue de gran ayuda."
+						imagen="https://media.licdn.com/dms/image/D4E03AQG05I_pANYyJQ/profile-displayphoto-shrink_100_100/0/1697244454761?e=1709164800&v=beta&t=N0-pjqv1COEYcYnSQaMKPwlPES79aMvEtyTPx1tZa68"
+					/>
+					<Testimonio
+						autor="Pablo Enríquez"
+						puesto="Estudiante UMayor"
+						descripcion="La flexibilidad que ofrece esta plataforma me permitió organizar mi horario de manera más efectiva. Pude inscribir mis asignaturas desde casa, lo cual hizo todo mucho más cómodo."
+						imagen="https://media.licdn.com/dms/image/D4E03AQFspHOzwN7B_A/profile-displayphoto-shrink_100_100/0/1702984733921?e=1709164800&v=beta&t=0H2el47vO-zT8vRWikkvHccuvMFjnsjy7qUX97ZAHHc"
+					/>
+					<Testimonio
+						autor="Benjamín Valenzuela"
+						puesto="Estudiante UMayor"
+						descripcion="Destaco el soporte que recibí durante mi proceso de inscripción. El equipo de asistencia estuvo siempre disponible para resolver mis dudas, brindándome un respaldo invaluable."
+						imagen="https://media.licdn.com/dms/image/D4E03AQHTrOA5e7ifvQ/profile-displayphoto-shrink_100_100/0/1703266074256?e=1709164800&v=beta&t=vFL2Rsg0PWQUVVHj8NkclKDY8Qzi5qqvpE4nfLAQNCQ"
+					/>
 				</div>
 			</div>
 		</section>

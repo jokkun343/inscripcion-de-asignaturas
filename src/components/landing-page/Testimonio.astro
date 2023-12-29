@@ -1,0 +1,21 @@
+---
+interface Props {
+	autor: string
+	puesto: string
+	descripcion: string
+	imagen: string
+}
+
+const { autor, puesto, descripcion, imagen } = Astro.props
+---
+
+<article class="rounded-3xl bg-white p-6 shadow-sm">
+	<div class="mb-4 flex flex-row">
+		<img class="aspect-square h-16 rounded-full" src={imagen} alt=`Avatar de ${autor}`/>
+		<div class="ml-4 flex flex-col justify-center">
+			<h3 class="font-semibold">{autor}</h3>
+			<p class="text-sm text-primary-500">{puesto}</p>
+		</div>
+	</div>
+	<p class="opacity-90">{descripcion}</p>
+</article>
