@@ -1,11 +1,12 @@
 ---
-import MenuIcon from "../icons/MenuIcon.astro";
+import MenuIcon from '../icons/MenuIcon.astro'
 ---
+
 <header>
 	<nav class="fixed top-0 z-50 w-full border-gray-200 bg-white px-4 py-2 lg:px-6">
 		<div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between">
 			<div class="z-40 flex justify-center bg-white">
-				<button onclick="toggleSideBar()" class="visible mr-3">
+				<button onclick="toggleSideBar()" class="mr-3 lg:hidden">
 					<MenuIcon />
 				</button>
 				<a class="self-center whitespace-nowrap text-xl font-semibold text-primary-500" href=""
@@ -16,22 +17,23 @@ import MenuIcon from "../icons/MenuIcon.astro";
 				id="sidebar"
 				class="absolute left-[-100%] top-0 z-30 h-screen w-2/4 border-neutral-400 bg-white lg:static lg:h-auto lg:w-auto lg:animate-none">
 				<ul class="mt-4 flex-col py-8 font-medium lg:mt-0 lg:flex lg:flex-row lg:space-x-8 lg:py-0">
-					<li><a class="block px-4 py-2 text-black" href="/">Home</a></li>
-					<li><a class="block px-4 py-2 text-black" href="#">Nosotros</a></li>
-					<li><a class="block px-4 py-2 text-black" href="#">Beneficios</a></li>
-					<li><a class="block px-4 py-2 text-black" href="#">Contacto</a></li>
+					<li><a class="block px-4 py-2 text-black" href="#inicio">Home</a></li>
+					<li><a class="block px-4 py-2 text-black" href="#beneficios">Beneficios</a></li>
+					<li><a class="block px-4 py-2 text-black" href="#estadísticas">Estadísticas</a></li>
+					<li><a class="block px-4 py-2 text-black" href="#experiencias">Experiencias</a></li>
+					<li><a class="block px-4 py-2 text-black" href="#contacto">Contacto</a></li>
 				</ul>
 			</div>
 			<div>
 				<a
-					class="mr-2 rounded-lg bg-primary-400 px-4 py-2 text-sm font-medium text-white hover:bg-primary-600 focus:outline-none focus:ring-4 focus:ring-primary-300 lg:px-5 lg:py-2.5"
+					class="mr-2 rounded-lg bg-primary-500 px-4 py-2 text-sm font-medium text-white hover:bg-primary-600 focus:outline-none focus:ring-4 focus:ring-primary-300 lg:px-5 lg:py-2.5"
 					href="/login">
-					Login
+					Inicia sesión
 				</a>
 			</div>
 		</div>
 	</nav>
-	<div class="h-16 w-full"></div>
+	<div class="h-10 w-full dark:bg-zinc-900"></div>
 </header>
 
 <script is:inline>
