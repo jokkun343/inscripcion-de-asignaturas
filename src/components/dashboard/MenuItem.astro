@@ -1,0 +1,17 @@
+---
+interface Props {
+	name: string
+	direction: string
+}
+
+const { direction, name } = Astro.props
+---
+
+<li>
+	<a
+		href={direction}
+		class="group flex items-center rounded-3xl p-2 opacity-90 transition-all hover:bg-primary-100">
+		<slot />
+		<span class="ml-3">{name}</span>
+	</a>
+</li>
