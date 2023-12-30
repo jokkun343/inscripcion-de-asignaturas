@@ -1,14 +1,15 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
-import Header from '../components/common/Header.astro';
-import Footer from '../components/common/Footer.astro';
-import '@fontsource/poppins';
+import { ViewTransitions } from 'astro:transitions'
+import Header from '../components/common/Header.astro'
+import Footer from '../components/common/Footer.astro'
+import '@fontsource/poppins'
 
 interface Props {
-	title: string;
+	title: string
+	header_footer?: string
 }
 
-const { title } = Astro.props;
+const { title, header_footer } = Astro.props
 ---
 
 <!doctype html>
@@ -19,33 +20,31 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>{title}</title>
-		<ViewTransitions/>
+		<ViewTransitions />
 	</head>
 	<body>
-		<Header />
+		{header_footer && <Header />}
 		<slot />
-		<Footer></Footer>
+		{header_footer && <Footer />}
 	</body>
 </html>
 
 <style is:global>
+html {
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif, system-ui;
+	scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
 	html {
-		box-sizing: border-box;
-		font-family: 'Poppins', sans-serif, system-ui;
-		scroll-behavior: smooth;
+		scroll-behavior: auto;
 	}
-
-	*,
-	*::after,
-	*::before {
-		box-sizing: inherit;
-	}
-
-	@media (prefers-reduced-motion: reduce) {
-			html {
-				scroll-behavior: auto;
-			}
-		}
-
-
+}
 </style>
