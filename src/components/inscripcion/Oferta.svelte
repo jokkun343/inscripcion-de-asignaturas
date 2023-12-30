@@ -1,39 +1,40 @@
 <script>
-	import data from '../../../public/data.json';
-	import { listaAsignaturas, setListaAsignaturas } from './asignaturasSeleccionadas.js';
-  
-	let asignaturas = data.asignaturas;
-	let asignaturasSeleccionadas = $listaAsignaturas;
-  
+	import data from '../../../public/data.json'
+	import { listaAsignaturas, setListaAsignaturas } from './asignaturasSeleccionadas.js'
+
+	let asignaturas = data.asignaturas
+	let asignaturasSeleccionadas = $listaAsignaturas
+
 	function toggleOpcion(index, opcionIndex) {
-	  const seleccionada = asignaturas[index];
-	  const { id, nombre, opciones, profesor, sala } = seleccionada;
-	  const { id: opcionId, dia, hora } = opciones[opcionIndex];
-  
-	  const seleccion = { id, nombre, opcionId, dia, hora, profesor, sala };
-  
-	  const existeSeleccion = $listaAsignaturas.some(
-		(s) => s.id === seleccion.id && s.opcionId === seleccion.opcionId
-	  );
-  
-	  if (existeSeleccion) {
-		asignaturasSeleccionadas = asignaturasSeleccionadas.filter((o) => o.id !== seleccion.id);
-	  } else {
-		asignaturasSeleccionadas = asignaturasSeleccionadas.filter((opcion) => opcion.id !== seleccion.id);
-		asignaturasSeleccionadas = [...asignaturasSeleccionadas, seleccion];
-	  }
-  
-	  setListaAsignaturas(asignaturasSeleccionadas);
+		const seleccionada = asignaturas[index]
+		const { id, nombre, opciones, profesor, sala } = seleccionada
+		const { id: opcionId, dia, hora } = opciones[opcionIndex]
+
+		const seleccion = { id, nombre, opcionId, dia, hora, profesor, sala }
+
+		const existeSeleccion = $listaAsignaturas.some(
+			(s) => s.id === seleccion.id && s.opcionId === seleccion.opcionId
+		)
+
+		if (existeSeleccion) {
+			asignaturasSeleccionadas = asignaturasSeleccionadas.filter((o) => o.id !== seleccion.id)
+		} else {
+			asignaturasSeleccionadas = asignaturasSeleccionadas.filter(
+				(opcion) => opcion.id !== seleccion.id
+			)
+			asignaturasSeleccionadas = [...asignaturasSeleccionadas, seleccion]
+		}
+
+		setListaAsignaturas(asignaturasSeleccionadas)
 	}
-  </script>
-  
+</script>
 
 <aside class="h-full max-h-screen w-1/3 gap-2 overflow-auto rounded-lg border bg-white p-4 shadow">
 	<h2 class="mb-4 text-center font-bold text-gray-900">Menú de asignaturas</h2>
 	<ul>
 		{#each asignaturas as asignatura, index}
 			<li>
-				<details class="mb-4 rounded-md">
+				<details class="mb-4 rounded-md" name="ramo">
 					<summary class="cursor-pointer px-4 py-2">
 						{asignatura.nombre}
 					</summary>
