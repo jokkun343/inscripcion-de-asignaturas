@@ -1,0 +1,12 @@
+---
+import Horario from '../../components/inscripcion/Horario.svelte'
+import Oferta from '../../components/inscripcion/Oferta.svelte'
+import Layout from '../../layouts/Layout.astro'
+---
+
+<Layout title="Inscripción de asignaturas">
+	<main class="flex h-[91vh] gap-4 overflow-hidden bg-primary-100 p-6">
+		<Oferta client:load />
+		<Horario client:load />
+	</main>
+</Layout>
