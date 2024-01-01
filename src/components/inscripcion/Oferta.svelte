@@ -29,12 +29,12 @@
 	}
 </script>
 
-<aside class="h-full max-h-screen w-1/3 gap-2 overflow-auto rounded-lg border bg-white p-4 shadow">
-	<h2 class="mb-4 text-center font-bold text-gray-900">Menú de asignaturas</h2>
+<aside class="mb-4 gap-2 overflow-auto rounded-3xl bg-white p-4 shadow-sm md:col-span-3 md:mb-0">
+	<h2 class="mb-4 rounded-3xl text-center font-bold text-gray-900">Menú de asignaturas</h2>
 	<ul>
 		{#each asignaturas as asignatura, index}
 			<li>
-				<details class="mb-4 rounded-md" name="ramo">
+				<details class="mb-4 rounded-md">
 					<summary class="cursor-pointer px-4 py-2">
 						{asignatura.nombre}
 					</summary>

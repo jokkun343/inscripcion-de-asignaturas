@@ -8,8 +8,8 @@
 	const horario = ['08:00', '09:30', '11:00', '12:30', '14:00', '15:30', '17:00', '18:30', '20:00']
 </script>
 
-<div class="box-border w-full overflow-auto">
-	<table class="box-border table h-full overflow-auto rounded-lg bg-white shadow">
+<div class="overflow-auto rounded-3xl bg-white p-6 shadow-sm md:col-span-9 md:h-full">
+	<table class="table shadow-sm md:h-full">
 		<thead>
 			<tr>
 				<th class="hora">Hora</th>
@@ -52,6 +52,7 @@
 		border: 1px solid #ddd;
 		height: 10%;
 		padding: 8px;
+		text-align: center;
 	}
 
 	.hora {
