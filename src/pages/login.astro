@@ -1,34 +1,46 @@
 ---
 import Layout from '../layouts/Layout.astro'
 
-const RE_RUT = /^(\d{1,3}(?:\.\d{1,3}){2}-[\dkK])$/
-
-function IsRUTInvalid(rut: FormDataEntryValue | null): boolean {
-	if (rut == null) return false
-	let isValid = false
-
-	if (!RE_RUT.test(rut.toString())) {
-		isValid = true
+function IsRutValid(rut: FormDataEntryValue | null): boolean {
+	if (rut === null){
+		return false
 	}
 
-	return isValid
+	rut = rut.toString()
+	const cleanRut = rut.replace(/[.-]/g, '')
+	const rutDigits = cleanRut.slice(0, -1)
+	const verifDigit = cleanRut.slice(-1).toLowerCase()
+
+	let sum = 0
+	let multiplier = 2
+
+	for (let i = rutDigits.length - 1; i >= 0; i--) {
+		sum += parseInt(rutDigits[i]) * multiplier
+		multiplier = multiplier === 7 ? 2 : multiplier + 1
+	}
+
+	const remainder = sum % 11
+	const calculatedVerifDigit = remainder === 0 ? '0' : remainder === 1 ? 'k' : (11 - remainder).toString()
+
+	return calculatedVerifDigit === verifDigit
 }
 
 const errors = { rut: '', password: '' }
+
 if (Astro.request.method === 'POST') {
 	try {
 		const data = await Astro.request.formData()
 		const rut = data.get('rut')
 		const password = data.get('password')
 
-		if (IsRUTInvalid(rut)) {
+		if (!IsRutValid(rut)) {
 			errors.rut += 'El RUT ingresado no es válido.'
 		}
 
 		const hasErrors = Object.values(errors).some((msg) => msg)
 
 		if (!hasErrors) {
-			return Astro.redirect('dashboard')
+			return Astro.redirect('/dashboard')
 		}
 	} catch (error) {
 		if (error instanceof Error) {
@@ -42,9 +54,10 @@ if (Astro.request.method === 'POST') {
 	<div class="bg-primary-50 px-4 py-8 dark:bg-zinc-900 sm:py-16 lg:px-6">
 		<form class="mx-auto flex max-w-md flex-col rounded-3xl bg-white p-6 shadow-sm" method="POST">
 			<h1 class="mb-8 text-center text-xl font-bold text-primary-500">Inicio de sesión</h1>
+
 			<label class="mb-2 text-sm font-medium text-gray-900">Identificación</label>
 			<input
-				class="mb-5 block w-full rounded-3xl border border-gray-300 p-2.5 pl-4 text-gray-900 focus:border-primary-600 focus:ring-primary-600"
+				class="block w-full rounded-3xl border border-gray-300 p-2.5 pl-4 text-gray-900 focus:border-primary-600 focus:ring-primary-600"
 				required
 				type="text"
 				placeholder="12.123.123-1"
@@ -52,9 +65,10 @@ if (Astro.request.method === 'POST') {
 				tabindex="1"
 			/>
 			{errors.rut && <p class="text-red-500">{errors.rut}</p>}
-			<label class="mb-2 text-sm font-medium text-gray-900">Contraseña</label>
+
+			<label class="mb-2 mt-5 text-sm font-medium text-gray-900">Contraseña</label>
 			<input
-				class="mb-5 block w-full rounded-3xl border border-gray-300 p-2.5 pl-4 text-gray-900 focus:border-primary-600 focus:ring-primary-600"
+				class="block w-full rounded-3xl border border-gray-300 p-2.5 pl-4 text-gray-900 focus:border-primary-600 focus:ring-primary-600"
 				required
 				minlength="8"
 				placeholder="********"
@@ -63,7 +77,7 @@ if (Astro.request.method === 'POST') {
 				tabindex="2"
 			/>
 			{errors.password && <p class="text-red-500">{errors.password}</p>}
-			<div class="mb-5 flex items-center justify-between">
+			<div class="my-5 flex items-center justify-between">
 				<div class="flex items-start">
 					<div class="flex h-5 items-center">
 						<input
@@ -81,9 +95,9 @@ if (Astro.request.method === 'POST') {
 					>Olvidaste tu contraseña</a
 				>
 			</div>
+
 			<button
 				class="w-full rounded-3xl bg-primary-500 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-primary-700 focus:outline-none focus:ring-4 focus:ring-primary-300"
-				type="submit"
 				tabindex="3">
 				Ingresar
 			</button>
