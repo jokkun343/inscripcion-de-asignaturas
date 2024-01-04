@@ -5,13 +5,15 @@ interface Props {
 }
 
 const { direction, name } = Astro.props
+const { pathname } = Astro.url
+const isActive = direction === pathname || direction === pathname.replace(/\/$/, '')
 ---
 
 <li>
 	<a
 		href={direction}
-		class="group flex items-center rounded-3xl p-2 opacity-90 transition-all hover:bg-primary-100">
-		<slot />
+		class=`group flex items-center rounded-3xl p-2 opacity-90 transition-al ease-in-out ${ isActive && 'bg-primary-500 text-white' }`>
+		<slot class="text-white" />
 		<span class="ml-3">{name}</span>
 	</a>
 </li>
