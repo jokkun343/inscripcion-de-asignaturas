@@ -15,22 +15,25 @@ import BooksIcon from '../icons/Books.astro'
 	</div>
 	<div class="flex-1 rounded-3xl bg-white px-3 py-5 shadow-sm">
 		<ul class="space-y-2">
-			<MenuItem name="Menú principal" direction="">
+			<MenuItem name="Menú principal" direction="/dashboard">
 				<CalendarioIcon class="h-auto text-neutral-800" />
 			</MenuItem>
-			<MenuItem name="Inscripción" direction="">
+			<MenuItem name="Inscripción" direction="/inscripcion/eleccion">
 				<CalendarioIcon class="h-auto text-neutral-800" />
 			</MenuItem>
-			<MenuItem name="Malla curricular" direction="">
+			<MenuItem name="Horario" direction="/dashboard/horario">
 				<CalendarioIcon class="h-auto text-neutral-800" />
 			</MenuItem>
-			<MenuItem name="Notificaciones" direction="">
+			<MenuItem name="Malla curricular" direction="/dashboard/malla">
 				<CalendarioIcon class="h-auto text-neutral-800" />
 			</MenuItem>
-			<MenuItem name="Menú principal" direction="">
+			<MenuItem name="Calendario" direction="/dashboard/calendario">
 				<CalendarioIcon class="h-auto text-neutral-800" />
 			</MenuItem>
-			<MenuItem name="Soporte" direction="">
+			<MenuItem name="Mensajes" direction="/dashboard/mensajes">
+				<CalendarioIcon class="h-auto text-neutral-800" />
+			</MenuItem>
+			<MenuItem name="Soporte" direction="/dashboard/soporte">
 				<CalendarioIcon class="h-auto text-neutral-800" />
 			</MenuItem>
 		</ul>
