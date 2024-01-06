@@ -1,23 +1,59 @@
 ---
 import ProgressItem from './ProgressItem.astro'
+
+const PROGRESS = [
+	{
+		stepId: 1,
+		stepName: 'Paso 1',
+		description: 'Elección',
+		backLink: '/dashboard',
+		nextLink: '/inscripcion/seleccion'
+	},
+	{
+		stepId: 2,
+		stepName: 'Paso 2',
+		description: 'Selección',
+		backLink: '/inscripcion/eleccion',
+		nextLink: '/inscripcion/confirmacion'
+	},
+	{
+		stepId: 3,
+		stepName: 'Paso 3',
+		description: 'Confirmación',
+		backLink: '/inscripcion/seleccion',
+		nextLink: '/dashboard'
+	}
+]
+
+interface Props {
+	stepNumber: number
+}
+
+const { stepNumber } = Astro.props
 ---
 
 <header class="col-span-12">
 	<nav class="flex w-full justify-between rounded-3xl bg-white p-4 shadow-sm">
 		<a
 			class="rounded-3xl border border-primary-500 bg-white px-4 py-2 text-sm text-primary-500 shadow-sm hover:bg-primary-100 lg:px-5 lg:py-2.5"
-			href="">
+			href={PROGRESS[stepNumber - 1].backLink}>
 			Volver atrás
 		</a>
 
 		<div class="grid w-1/2 grid-cols-3 gap-x-4">
-			<ProgressItem step="Paso 1" description="Selección" completed={true} />
-			<ProgressItem step="Paso 2" description="Inscripción" completed={true} />
-			<ProgressItem step="Paso 2" description="Confirmación" completed={false} />
+			{
+				PROGRESS.map(({ stepName, description, stepId }) => (
+					<ProgressItem
+						completed={stepId <= stepNumber}
+						stepName={stepName}
+						description={description}
+					/>
+				))
+			}
 		</div>
 		<a
 			class="rounded-3xl bg-primary-500 px-4 py-2 text-sm text-white shadow-sm hover:bg-primary-600 lg:px-5 lg:py-2.5"
-			href="">
+			href={PROGRESS[stepNumber - 1].nextLink}>
 			Continuar
 		</a>
 	</nav>
