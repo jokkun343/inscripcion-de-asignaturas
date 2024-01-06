@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro'
 
 function IsRutValid(rut: FormDataEntryValue | null): boolean {
-	if (rut === null){
+	if (rut === null) {
 		return false
 	}
 
@@ -20,7 +20,8 @@ function IsRutValid(rut: FormDataEntryValue | null): boolean {
 	}
 
 	const remainder = sum % 11
-	const calculatedVerifDigit = remainder === 0 ? '0' : remainder === 1 ? 'k' : (11 - remainder).toString()
+	const calculatedVerifDigit =
+		remainder === 0 ? '0' : remainder === 1 ? 'k' : (11 - remainder).toString()
 
 	return calculatedVerifDigit === verifDigit
 }
@@ -50,8 +51,8 @@ if (Astro.request.method === 'POST') {
 }
 ---
 
-<Layout title="Inicio de sessión" header_footer="true">
-	<div class="bg-primary-50 px-4 py-8 dark:bg-zinc-900 sm:py-16 lg:px-6">
+<Layout title="Inicio de sessión" header_footer={true}>
+	<div class="bg-primary-50 px-4 py-8 sm:py-16 lg:px-6 dark:bg-zinc-900">
 		<form class="mx-auto flex max-w-md flex-col rounded-3xl bg-white p-6 shadow-sm" method="POST">
 			<h1 class="mb-8 text-center text-xl font-bold text-primary-500">Inicio de sesión</h1>
 
@@ -77,6 +78,7 @@ if (Astro.request.method === 'POST') {
 				tabindex="2"
 			/>
 			{errors.password && <p class="text-red-500">{errors.password}</p>}
+
 			<div class="my-5 flex items-center justify-between">
 				<div class="flex items-start">
 					<div class="flex h-5 items-center">
@@ -91,9 +93,9 @@ if (Astro.request.method === 'POST') {
 						<label for="remember" class="text-gray-500">Recordarme</label>
 					</div>
 				</div>
-				<a href="#" class="text-right text-sm font-medium text-primary-500 hover:underline"
-					>Olvidaste tu contraseña</a
-				>
+				<a href="#" class="text-right text-sm font-medium text-primary-500 hover:underline">
+					Olvidaste tu contraseña
+				</a>
 			</div>
 
 			<button
