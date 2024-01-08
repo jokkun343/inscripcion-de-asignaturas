@@ -1,5 +1,5 @@
 <script>
-	import { listaAsignaturas } from './asignaturasSeleccionadas.js'
+	import { listaAsignaturas } from './coursesStore.js'
 
 	$: asignaturasSeleccionadas = $listaAsignaturas
 
@@ -30,7 +30,7 @@
 								{#each asignaturasSeleccionadas as asignatura}
 									{#if asignatura.dia === dia && asignatura.hora === hora}
 										<div
-											class="overflow-hidden rounded-xl border border-solid border-primary-500 bg-white p-3 text-center shadow-sm">
+											class="overflow-hidden rounded-xl h-full flex flex-col align-middle border border-solid border-primary-500 bg-white p-3 text-center shadow-sm">
 											<p class="text-sm font-bold text-primary-600">{asignatura.nombre}</p>
 											<p class="text-xs text-gray-500">
 												Profesor {asignatura.profesor}

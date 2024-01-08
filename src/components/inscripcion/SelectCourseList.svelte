@@ -1,6 +1,6 @@
 <script>
 	import data from '../../../public/data.json'
-	import { listaAsignaturas, setListaAsignaturas } from './asignaturasSeleccionadas.js'
+	import { listaAsignaturas, setListaAsignaturas } from './coursesStore.js'
 
 	let asignaturas = data.asignaturas
 	let asignaturasSeleccionadas = $listaAsignaturas

@@ -1,6 +1,6 @@
 ---
-import Horario from '../../components/inscripcion/Horario.svelte'
-import Oferta from '../../components/inscripcion/Oferta.svelte'
+import WeekCalendar from '../../components/inscripcion/WeekCalendar.svelte'
+import SelectCourseList from '../../components/inscripcion/SelectCourseList.svelte'
 import Layout from '../../layouts/Layout.astro'
 import ProgressControl from '../../components/inscripcion/ProgressControl.astro'
 ---
@@ -8,7 +8,7 @@ import ProgressControl from '../../components/inscripcion/ProgressControl.astro'
 <Layout title="Inscripción de asignaturas - Paso 2">
 	<main class="space-y-4 bg-primary-200 p-4 md:grid md:h-screen md:grid-cols-12 md:gap-4">
 		<ProgressControl stepNumber={2} />
-		<Oferta client:load />
-		<Horario client:load />
+		<SelectCourseList client:load />
+		<WeekCalendar client:load />
 	</main>
 </Layout>
