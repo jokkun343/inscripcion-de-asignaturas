@@ -1,10 +1,14 @@
 ---
 import Layout from '../../layouts/Layout.astro'
 import ProgressControl from '../../components/inscripcion/ProgressControl.astro'
+import ElectionCourseList from '../../components/inscripcion/ElectionCourseList.svelte'
+import ElectedCourseList from '../../components/inscripcion/ElectedCourseList.svelte'
 ---
 
 <Layout title="Inscripción de asignaturas - Paso 1">
-	<main class="space-y-4 bg-primary-200 p-4 md:grid md:h-screen md:grid-cols-12 md:gap-4">
+	<main class="space-y-4 bg-neutral-100 p-4 md:grid md:h-screen md:grid-cols-12 md:gap-4">
 		<ProgressControl stepNumber={1} />
+		<ElectionCourseList client:load />
+		<ElectedCourseList client:load />
 	</main>
 </Layout>

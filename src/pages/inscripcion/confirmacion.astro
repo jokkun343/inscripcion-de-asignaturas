@@ -1,10 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro'
 import ProgressControl from '../../components/inscripcion/ProgressControl.astro'
+import WeekCalendar from '../../components/inscripcion/WeekCalendar.svelte'
 ---
 
 <Layout title="Inscripción de asignaturas - Paso 3">
-	<main class="space-y-4 bg-primary-200 p-4 md:grid md:h-screen md:grid-cols-12 md:gap-4">
+	<main class="space-y-4 bg-neutral-100 p-4 md:grid md:h-screen md:grid-cols-12 md:gap-4">
 		<ProgressControl stepNumber={3} />
+		<div class="col-span-2"></div>
+		<WeekCalendar client:only />
 	</main>
 </Layout>
