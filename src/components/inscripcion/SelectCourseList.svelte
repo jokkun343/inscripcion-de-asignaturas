@@ -29,7 +29,7 @@
 	}
 </script>
 
-<aside class="mb-4 gap-2 overflow-auto rounded-3xl bg-white p-4 shadow-sm md:col-span-3 md:mb-0">
+<aside class="mb-4 gap-2 overflow-auto rounded-3xl bg-white p-4 shadow-sm md:col-span-4 md:mb-0">
 	<h2 class="mb-4 rounded-3xl text-center font-bold text-gray-900">Menú de asignaturas</h2>
 	<ul>
 		{#each asignaturas as asignatura, index}

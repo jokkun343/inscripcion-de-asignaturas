@@ -8,7 +8,7 @@
 	const horario = ['08:00', '09:30', '11:00', '12:30', '14:00', '15:30', '17:00', '18:30', '20:00']
 </script>
 
-<div class="max-h-full overflow-auto rounded-3xl bg-white p-6 shadow-sm md:col-span-9 md:h-full">
+<div class="max-h-full overflow-auto rounded-3xl bg-white p-6 shadow-sm md:col-span-8 md:h-full">
 	<div class="h-full overflow-auto">
 		<table class="table w-full table-fixed border-collapse border border-neutral-200 md:h-full">
 			<thead class="sticky top-0 h-14 border border-neutral-200 bg-white shadow">
@@ -30,7 +30,7 @@
 								{#each asignaturasSeleccionadas as asignatura}
 									{#if asignatura.dia === dia && asignatura.hora === hora}
 										<div
-											class="overflow-hidden rounded-xl h-full flex flex-col align-middle border border-solid border-primary-500 bg-white p-3 text-center shadow-sm">
+											class="flex h-full flex-col overflow-hidden rounded-xl border border-solid border-primary-500 bg-white p-3 text-center align-middle shadow-sm">
 											<p class="text-sm font-bold text-primary-600">{asignatura.nombre}</p>
 											<p class="text-xs text-gray-500">
 												Profesor {asignatura.profesor}
