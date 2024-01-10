@@ -1,13 +1,21 @@
 <script>
 	import { setListaAsignaturasElegidas, listaAsignaturasElegidas } from './coursesStore.js'
-
 	export let asignatura
 
 	let asignaturasElegidas = $listaAsignaturasElegidas
+	let inscrito = false
 
 	function inscribirAsignatura(event) {
-		asignaturasElegidas = [...asignaturasElegidas, asignatura]
+		const existeAsignatura = asignaturasElegidas.some((eleccion) => eleccion === asignatura)
+
+		if (existeAsignatura) {
+			asignaturasElegidas = asignaturasElegidas.filter((eleccion) => eleccion !== asignatura)
+		} else {
+			asignaturasElegidas = asignaturasElegidas.filter((eleccion) => eleccion !== asignatura)
+			asignaturasElegidas = [...asignaturasElegidas, asignatura]
+		}
 		setListaAsignaturasElegidas(asignaturasElegidas)
+		inscrito = !inscrito
 	}
 </script>
 
@@ -28,7 +36,11 @@
 		<button
 			on:click={inscribirAsignatura}
 			class="rounded-3xl bg-primary-500 px-6 py-2 text-sm text-white shadow-sm hover:bg-primary-600">
-			Inscribir
+			{#if !inscrito}
+				Inscribir
+			{:else}
+				Quitar
+			{/if}
 		</button>
 	</div>
 </article>
