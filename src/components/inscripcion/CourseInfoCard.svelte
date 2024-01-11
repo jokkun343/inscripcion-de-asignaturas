@@ -2,16 +2,16 @@
 	import { setListaAsignaturasElegidas, listaAsignaturasElegidas } from './coursesStore.js'
 	export let asignatura
 
-	let asignaturasElegidas = $listaAsignaturasElegidas
+	$: asignaturasElegidas = $listaAsignaturasElegidas
 	let inscrito = false
 
-	function inscribirAsignatura(event) {
-		const existeAsignatura = asignaturasElegidas.some((eleccion) => eleccion === asignatura)
+	function inscribirAsignatura() {
+		const existeAsignatura = asignaturasElegidas.some((eleccion) => eleccion.id === asignatura.id)
 
 		if (existeAsignatura) {
-			asignaturasElegidas = asignaturasElegidas.filter((eleccion) => eleccion !== asignatura)
+			asignaturasElegidas = asignaturasElegidas.filter((eleccion) => eleccion.id !== asignatura.id)
 		} else {
-			asignaturasElegidas = asignaturasElegidas.filter((eleccion) => eleccion !== asignatura)
+			asignaturasElegidas = asignaturasElegidas.filter((eleccion) => eleccion.id !== asignatura.id)
 			asignaturasElegidas = [...asignaturasElegidas, asignatura]
 		}
 		setListaAsignaturasElegidas(asignaturasElegidas)
@@ -20,13 +20,16 @@
 </script>
 
 <article class="space-y-2 rounded-3xl border-2 p-4">
-	<img class="rounded-xl" src={asignatura.image} alt="Imagen de la asignatura" />
-	<h2 class="font-semibold text-primary-500">{asignatura.name}</h2>
-	<p class=" text-sm">{asignatura.description}</p>
+	<img
+		class="rounded-xl"
+		src="https://www.fundaciontelefonica.com/wp-content/uploads/2022/09/portada-dia-programador-2560x950-1.jpg"
+		alt="Imagen de la asignatura" />
+	<h2 class="font-semibold text-primary-500">{asignatura.nombre}</h2>
+	<p class=" text-sm">{asignatura.profesor}</p>
 	<div class=" flex flex-row justify-between text-sm">
-		<p>{asignatura.secciones} secciones</p>
+		<p>2 secciones</p>
 		<p>3 profes</p>
-		<p>302 alumnos</p>
+		<p>30 alumnos</p>
 	</div>
 	<div class=" flex flex-row justify-between">
 		<button
