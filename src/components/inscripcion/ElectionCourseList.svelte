@@ -1,19 +1,11 @@
 <script>
 	import data from '../../../public/data.json'
 	import CourseInfoCard from './CourseInfoCard.svelte'
-
+	
 	let asignaturas = data.asignaturas
-
-	let asignaturaprueba = {
-		image:
-			'https://www.fundaciontelefonica.com/wp-content/uploads/2022/09/portada-dia-programador-2560x950-1.jpg',
-		name: 'Programación II',
-		description: 'este ramo es muy god',
-		secciones: 2
-	}
 </script>
 
-<section class="col-span-8 space-y-4 rounded-3xl bg-white p-4 shadow-sm">
+<section class="space-y-4 rounded-3xl bg-white p-4 shadow-sm max-h-full overflow-auto md:col-span-8 md:h-full">
 	<details class="rounded-xl border-2 p-4" open name="asignaturas">
 		<summary> Asignaturas reprobadas </summary>
 		<div class="mt-2 grid grid-cols-3 gap-4">
