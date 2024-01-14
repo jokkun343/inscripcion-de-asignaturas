@@ -1,9 +1,9 @@
 <script>
-	import data from '../../../public/data.json'
 	import { listaAsignaturas, setListaAsignaturas } from './coursesStore.js'
+	import { listaAsignaturasElegidas } from './coursesStore.js'
 
-	let asignaturas = data.asignaturas
-	let asignaturasSeleccionadas = $listaAsignaturas
+	let asignaturas = $listaAsignaturasElegidas
+	$: asignaturasSeleccionadas = $listaAsignaturas
 
 	function toggleOpcion(index, opcionIndex) {
 		const seleccionada = asignaturas[index]
@@ -12,7 +12,7 @@
 
 		const seleccion = { id, nombre, opcionId, dia, hora, profesor, sala }
 
-		const existeSeleccion = $listaAsignaturas.some(
+		const existeSeleccion = asignaturasSeleccionadas.some(
 			(s) => s.id === seleccion.id && s.opcionId === seleccion.opcionId
 		)
 
