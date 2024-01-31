@@ -29,21 +29,21 @@ const { title, header_footer } = Astro.props
 </html>
 
 <style is:global>
-html {
-	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif, system-ui;
-	scroll-behavior: smooth;
-}
-
-*,
-*::after,
-*::before {
-	box-sizing: inherit;
-}
-
-@media (prefers-reduced-motion: reduce) {
 	html {
-		scroll-behavior: auto;
+		box-sizing: border-box;
+		font-family: 'Poppins', sans-serif, system-ui;
+		scroll-behavior: smooth;
 	}
-}
+
+	*,
+	*::after,
+	*::before {
+		box-sizing: inherit;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		html {
+			scroll-behavior: auto;
+		}
+	}
 </style>

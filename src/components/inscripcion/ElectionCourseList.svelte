@@ -1,11 +1,12 @@
 <script>
 	import data from '../../../public/data.json'
 	import CourseInfoCard from './CourseInfoCard.svelte'
-	
+
 	let asignaturas = data.asignaturas
 </script>
 
-<section class="space-y-4 rounded-3xl bg-white p-4 shadow-sm max-h-full overflow-auto md:col-span-8 md:h-full">
+<section
+	class="max-h-full space-y-4 overflow-auto rounded-3xl bg-white p-4 shadow-sm md:col-span-8 md:h-full">
 	<details class="rounded-xl border-2 p-4" open name="asignaturas">
 		<summary> Asignaturas reprobadas </summary>
 		<div class="mt-2 grid grid-cols-3 gap-4">

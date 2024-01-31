@@ -4,7 +4,6 @@
 	$: asignaturasSeleccionadas = $listaAsignaturas
 
 	const diasSemana = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sabado']
-
 	const horario = ['08:00', '09:30', '11:00', '12:30', '14:00', '15:30', '17:00', '18:30', '20:00']
 </script>
 
