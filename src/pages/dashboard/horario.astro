@@ -2,13 +2,15 @@
 import Layout from '../../layouts/Layout.astro'
 import Navbar from '../../components/dashboard/Navbar.astro'
 import SideMenu from '../../components/dashboard/SideMenu.astro'
+import WeekCalendar from '../../components/inscripcion/WeekCalendar.svelte';
 ---
 
-<Layout title="Horario">
+<Layout title="Calendario de asignaturas">
 	<div class="bg-neutral-100">
 		<Navbar />
 		<SideMenu />
-		<main class="h-auto p-4 md:ml-64 md:pt-20">
+		<main class="p-4 md:ml-64 md:pt-20 grid-cols-8 h-screen">
+            <WeekCalendar client:load/>
 		</main>
 	</div>
 </Layout>
