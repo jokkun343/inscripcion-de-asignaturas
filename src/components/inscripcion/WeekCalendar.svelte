@@ -1,5 +1,6 @@
 <script>
 	import { listaAsignaturas } from './coursesStore.js'
+	import Course from './Course.svelte'
 
 	$: asignaturasSeleccionadas = $listaAsignaturas
 
@@ -28,14 +29,7 @@
 							<td class="h-28 border border-neutral-200 p-2">
 								{#each asignaturasSeleccionadas as asignatura}
 									{#if asignatura.dia === dia && asignatura.hora === hora}
-										<div
-											class="flex h-full flex-col overflow-hidden rounded-xl border border-solid border-primary-500 bg-white p-3 text-center align-middle shadow-sm">
-											<p class="text-sm font-bold text-primary-600">{asignatura.nombre}</p>
-											<p class="text-xs text-gray-500">
-												Profesor {asignatura.profesor}
-											</p>
-											<p class="text-xs text-gray-500">Sala {asignatura.sala}</p>
-										</div>
+										<Course {asignatura} />
 									{/if}
 								{/each}
 							</td>
