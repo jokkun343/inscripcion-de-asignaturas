@@ -1,0 +1,1393 @@
+{
+    "asignaturas": [
+        {
+            "id": 1,
+            "nombre": "Computación para la ingeniería",
+            "descripcion": "Explora los fundamentos de la computación adaptados a la ingeniería. Aprende conceptos clave de algoritmos y estructuras de datos.",
+            "semestre": "Primer semestre",
+            "area": "Área de formación específica",
+            "secciones": [
+                {
+                    "id": 1,
+                    "semestre_ofertado": "2023 - 1",
+                    "profesor": "Diana Valdez",
+                    "cupos_disponibles": 40,
+                    "inscritos": 30,
+                    "horario": [
+                        {
+                            "dia": "Lunes",
+                            "hora_inicio": "10:00",
+                            "hora_fin": "11:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        },
+                        {
+                            "dia": "Miércoles",
+                            "hora_inicio": "10:00",
+                            "hora_fin": "11:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "semestre_ofertado": "2023 - 1",
+                    "profesor": "Carlos Ramirez",
+                    "cupos_disponibles": 35,
+                    "inscritos": 25,
+                    "horario": [
+                        {
+                            "dia": "Martes",
+                            "hora_inicio": "13:30",
+                            "hora_fin": "14:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        },
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "13:30",
+                            "hora_fin": "14:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        }
+                    ]
+                }
+            ],
+            "pre_requisitos": []
+        },
+        {
+            "id": 2,
+            "nombre": "Química aplicada a la ingeniería",
+            "descripcion": "Sumérgete en los principios fundamentales de la química y su aplicación en la ingeniería. Explora reacciones químicas, equilibrio y termodinámica.",
+            "semestre": "Primer semestre",
+            "area": "Área de formación específica",
+            "secciones": [
+                {
+                    "id": 1,
+                    "semestre_ofertado": "2023 - 1",
+                    "profesor": "Isabel García",
+                    "cupos_disponibles": 45,
+                    "inscritos": 40,
+                    "horario": [
+                        {
+                            "dia": "Lunes",
+                            "hora_inicio": "09:00",
+                            "hora_fin": "10:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        },
+                        {
+                            "dia": "Miércoles",
+                            "hora_inicio": "09:00",
+                            "hora_fin": "10:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "semestre_ofertado": "2023 - 1",
+                    "profesor": "Javier Morales",
+                    "cupos_disponibles": 50,
+                    "inscritos": 35,
+                    "horario": [
+                        {
+                            "dia": "Martes",
+                            "hora_inicio": "14:00",
+                            "hora_fin": "15:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        },
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "14:00",
+                            "hora_fin": "15:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        }
+                    ]
+                }
+            ],
+            "pre_requisitos": []
+        },
+        {
+            "id": 3,
+            "nombre": "Álgebra y geometría analítica",
+            "descripcion": "Explora los conceptos fundamentales del álgebra y la geometría analítica. Desarrolla habilidades matemáticas esenciales para la ingeniería.",
+            "semestre": "Primer semestre",
+            "area": "Área de formación básica",
+            "secciones": [
+                {
+                    "id": 1,
+                    "semestre_ofertado": "2023 - 1",
+                    "profesor": "Gabriel Martínez",
+                    "cupos_disponibles": 55,
+                    "inscritos": 50,
+                    "horario": [
+                        {
+                            "dia": "Lunes",
+                            "hora_inicio": "11:30",
+                            "hora_fin": "12:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 401"
+                        },
+                        {
+                            "dia": "Miércoles",
+                            "hora_inicio": "11:30",
+                            "hora_fin": "12:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 401"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "semestre_ofertado": "2023 - 1",
+                    "profesor": "Laura Sánchez",
+                    "cupos_disponibles": 60,
+                    "inscritos": 55,
+                    "horario": [
+                        {
+                            "dia": "Martes",
+                            "hora_inicio": "16:00",
+                            "hora_fin": "17:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 501"
+                        },
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "16:00",
+                            "hora_fin": "17:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 501"
+                        }
+                    ]
+                }
+            ],
+            "pre_requisitos": []
+        },
+        {
+            "id": 4,
+            "nombre": "Cálculo diferencial",
+            "descripcion": "Sumérgete en los conceptos fundamentales del cálculo diferencial. Explora límites, derivadas y sus aplicaciones en problemas prácticos de ingeniería.",
+            "semestre": "Primer semestre",
+            "area": "Área de formación básica",
+            "secciones": [
+                {
+                    "id": 1,
+                    "semestre_ofertado": "2023 - 1",
+                    "profesor": "Ricardo Gómez",
+                    "cupos_disponibles": 50,
+                    "inscritos": 45,
+                    "horario": [
+                        {
+                            "dia": "Lunes",
+                            "hora_inicio": "09:00",
+                            "hora_fin": "10:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        },
+                        {
+                            "dia": "Miércoles",
+                            "hora_inicio": "09:00",
+                            "hora_fin": "10:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "semestre_ofertado": "2023 - 1",
+                    "profesor": "Ana Rodríguez",
+                    "cupos_disponibles": 55,
+                    "inscritos": 50,
+                    "horario": [
+                        {
+                            "dia": "Martes",
+                            "hora_inicio": "14:00",
+                            "hora_fin": "15:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 401"
+                        },
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "14:00",
+                            "hora_fin": "15:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 401"
+                        }
+                    ]
+                }
+            ],
+            "pre_requisitos": [
+                {
+                    "id": 3,
+                    "nombre": "Álgebra y geometría analítica"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "nombre": "Administración moderna",
+            "descripcion": "Explora los principios fundamentales de la administración moderna. Desarrolla habilidades en gestión, liderazgo y toma de decisiones en un entorno empresarial cambiante.",
+            "semestre": "Primer semestre",
+            "area": "Área de formación en gestión",
+            "secciones": [
+                {
+                    "id": 1,
+                    "semestre_ofertado": "2023 - 1",
+                    "profesor": "María Fernández",
+                    "cupos_disponibles": 40,
+                    "inscritos": 35,
+                    "horario": [
+                        {
+                            "dia": "Lunes",
+                            "hora_inicio": "10:30",
+                            "hora_fin": "11:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        },
+                        {
+                            "dia": "Miércoles",
+                            "hora_inicio": "10:30",
+                            "hora_fin": "11:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "semestre_ofertado": "2023 - 1",
+                    "profesor": "Alejandro López",
+                    "cupos_disponibles": 45,
+                    "inscritos": 40,
+                    "horario": [
+                        {
+                            "dia": "Martes",
+                            "hora_inicio": "16:30",
+                            "hora_fin": "17:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        },
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "16:30",
+                            "hora_fin": "17:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        }
+                    ]
+                }
+            ],
+            "pre_requisitos": []
+        },
+        {
+            "id": 6,
+            "nombre": "Competencias académicas universitarias",
+            "descripcion": "Desarrolla habilidades esenciales para el éxito académico en la universidad. Aprende técnicas de estudio, comunicación efectiva y trabajo en equipo.",
+            "semestre": "Primer semestre",
+            "area": "Área de formación general",
+            "secciones": [
+                {
+                    "id": 1,
+                    "semestre_ofertado": "2023 - 1",
+                    "profesor": "Elena Ramírez",
+                    "cupos_disponibles": 55,
+                    "inscritos": 50,
+                    "horario": [
+                        {
+                            "dia": "Lunes",
+                            "hora_inicio": "11:00",
+                            "hora_fin": "12:20",
+                            "tipo": "Seminario",
+                            "sala": "MCSR - 401"
+                        },
+                        {
+                            "dia": "Miércoles",
+                            "hora_inicio": "11:00",
+                            "hora_fin": "12:20",
+                            "tipo": "Seminario",
+                            "sala": "MCSR - 401"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "semestre_ofertado": "2023 - 1",
+                    "profesor": "Carlos Hernández",
+                    "cupos_disponibles": 60,
+                    "inscritos": 55,
+                    "horario": [
+                        {
+                            "dia": "Martes",
+                            "hora_inicio": "15:30",
+                            "hora_fin": "16:50",
+                            "tipo": "Seminario",
+                            "sala": "MCSR - 501"
+                        },
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "15:30",
+                            "hora_fin": "16:50",
+                            "tipo": "Seminario",
+                            "sala": "MCSR - 501"
+                        }
+                    ]
+                }
+            ],
+            "pre_requisitos": []
+        },
+        {
+            "id": 7,
+            "nombre": "Programación I",
+            "descripcion": "Introducción a la programación. Aprende los fundamentos de la lógica de programación y el desarrollo de software.",
+            "semestre": "Segundo semestre",
+            "area": "Área de formación específica",
+            "secciones": [
+                {
+                    "id": 1,
+                    "semestre_ofertado": "2023 - 2",
+                    "profesor": "Martín Sánchez",
+                    "cupos_disponibles": 45,
+                    "inscritos": 40,
+                    "horario": [
+                        {
+                            "dia": "Lunes",
+                            "hora_inicio": "14:00",
+                            "hora_fin": "15:20",
+                            "tipo": "Laboratorio",
+                            "sala": "MCSR - 201"
+                        },
+                        {
+                            "dia": "Miércoles",
+                            "hora_inicio": "14:00",
+                            "hora_fin": "15:20",
+                            "tipo": "Laboratorio",
+                            "sala": "MCSR - 201"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "semestre_ofertado": "2023 - 2",
+                    "profesor": "Laura Gutiérrez",
+                    "cupos_disponibles": 50,
+                    "inscritos": 45,
+                    "horario": [
+                        {
+                            "dia": "Martes",
+                            "hora_inicio": "16:30",
+                            "hora_fin": "17:50",
+                            "tipo": "Laboratorio",
+                            "sala": "MCSR - 301"
+                        },
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "16:30",
+                            "hora_fin": "17:50",
+                            "tipo": "Laboratorio",
+                            "sala": "MCSR - 301"
+                        }
+                    ]
+                }
+            ],
+            "pre_requisitos": [
+                {
+                    "id": 1,
+                    "nombre": "Computación para la ingeniería"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "nombre": "Bases de datos",
+            "descripcion": "Explora los conceptos fundamentales de las bases de datos. Aprende a diseñar y gestionar sistemas de almacenamiento de información.",
+            "semestre": "Segundo semestre",
+            "area": "Área de formación específica",
+            "secciones": [
+                {
+                    "id": 1,
+                    "semestre_ofertado": "2023 - 2",
+                    "profesor": "Ana Rodríguez",
+                    "cupos_disponibles": 40,
+                    "inscritos": 35,
+                    "horario": [
+                        {
+                            "dia": "Lunes",
+                            "hora_inicio": "10:00",
+                            "hora_fin": "11:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        },
+                        {
+                            "dia": "Miércoles",
+                            "hora_inicio": "10:00",
+                            "hora_fin": "11:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "semestre_ofertado": "2023 - 2",
+                    "profesor": "Javier Morales",
+                    "cupos_disponibles": 45,
+                    "inscritos": 40,
+                    "horario": [
+                        {
+                            "dia": "Martes",
+                            "hora_inicio": "14:30",
+                            "hora_fin": "15:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        },
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "14:30",
+                            "hora_fin": "15:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        }
+                    ]
+                }
+            ],
+            "pre_requisitos": []
+        },
+        {
+            "id": 9,
+            "nombre": "Álgebra lineal",
+            "descripcion": "Explora los conceptos fundamentales del álgebra lineal. Aprende sobre vectores, matrices y sus aplicaciones en diversas áreas de la ingeniería.",
+            "semestre": "Segundo semestre",
+            "area": "Área de formación básica",
+            "secciones": [
+                {
+                    "id": 1,
+                    "semestre_ofertado": "2023 - 2",
+                    "profesor": "Elena Gómez",
+                    "cupos_disponibles": 50,
+                    "inscritos": 45,
+                    "horario": [
+                        {
+                            "dia": "Lunes",
+                            "hora_inicio": "09:00",
+                            "hora_fin": "10:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        },
+                        {
+                            "dia": "Miércoles",
+                            "hora_inicio": "09:00",
+                            "hora_fin": "10:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "semestre_ofertado": "2023 - 2",
+                    "profesor": "Carlos Martínez",
+                    "cupos_disponibles": 55,
+                    "inscritos": 50,
+                    "horario": [
+                        {
+                            "dia": "Martes",
+                            "hora_inicio": "14:30",
+                            "hora_fin": "15:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        },
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "14:30",
+                            "hora_fin": "15:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        }
+                    ]
+                }
+            ],
+            "pre_requisitos": [
+                {
+                    "id": 3,
+                    "nombre": "Álgebra y geometría analítica"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "nombre": "Cálculo integral",
+            "descripcion": "Profundiza en los conceptos del cálculo, centrándote en la integral definida y sus aplicaciones. Desarrolla habilidades para resolver problemas prácticos en ingeniería.",
+            "semestre": "Segundo semestre",
+            "area": "Área de formación básica",
+            "secciones": [
+                {
+                    "id": 1,
+                    "semestre_ofertado": "2023 - 2",
+                    "profesor": "Laura Sánchez",
+                    "cupos_disponibles": 48,
+                    "inscritos": 40,
+                    "horario": [
+                        {
+                            "dia": "Lunes",
+                            "hora_inicio": "10:00",
+                            "hora_fin": "11:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        },
+                        {
+                            "dia": "Miércoles",
+                            "hora_inicio": "10:00",
+                            "hora_fin": "11:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "semestre_ofertado": "2023 - 2",
+                    "profesor": "Javier Morales",
+                    "cupos_disponibles": 52,
+                    "inscritos": 45,
+                    "horario": [
+                        {
+                            "dia": "Martes",
+                            "hora_inicio": "14:30",
+                            "hora_fin": "15:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        },
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "14:30",
+                            "hora_fin": "15:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        }
+                    ]
+                }
+            ],
+            "pre_requisitos": [
+                {
+                    "id": 4,
+                    "nombre": "Cálculo diferencial"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "nombre": "Física",
+            "descripcion": "Explora los principios fundamentales de la física. Comprende conceptos como la mecánica, termodinámica y electromagnetismo, aplicados a situaciones del mundo real.",
+            "semestre": "Segundo semestre",
+            "area": "Área de formación básica",
+            "secciones": [
+                {
+                    "id": 1,
+                    "semestre_ofertado": "2023 - 2",
+                    "profesor": "Carlos Ramírez",
+                    "cupos_disponibles": 48,
+                    "inscritos": 40,
+                    "horario": [
+                        {
+                            "dia": "Lunes",
+                            "hora_inicio": "11:30",
+                            "hora_fin": "12:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        },
+                        {
+                            "dia": "Miércoles",
+                            "hora_inicio": "11:30",
+                            "hora_fin": "12:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "semestre_ofertado": "2023 - 2",
+                    "profesor": "Ana Gutiérrez",
+                    "cupos_disponibles": 52,
+                    "inscritos": 45,
+                    "horario": [
+                        {
+                            "dia": "Martes",
+                            "hora_inicio": "15:00",
+                            "hora_fin": "16:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        },
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "15:00",
+                            "hora_fin": "16:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        }
+                    ]
+                }
+            ],
+            "pre_requisitos": [
+                {
+                    "id": 4,
+                    "nombre": "Cálculo diferencial"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "nombre": "Escritura y lectura académica",
+            "descripcion": "Desarrolla habilidades avanzadas de escritura y lectura para el ámbito académico. Aprende a analizar textos, expresar ideas de manera clara y elaborar documentos académicos.",
+            "semestre": "Segundo semestre",
+            "area": "Área de formación general",
+            "secciones": [
+                {
+                    "id": 1,
+                    "semestre_ofertado": "2023 - 2",
+                    "profesor": "Elena Ramírez",
+                    "cupos_disponibles": 45,
+                    "inscritos": 40,
+                    "horario": [
+                        {
+                            "dia": "Lunes",
+                            "hora_inicio": "14:00",
+                            "hora_fin": "15:20",
+                            "tipo": "Seminario",
+                            "sala": "MCSR - 201"
+                        },
+                        {
+                            "dia": "Miércoles",
+                            "hora_inicio": "14:00",
+                            "hora_fin": "15:20",
+                            "tipo": "Seminario",
+                            "sala": "MCSR - 201"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "semestre_ofertado": "2023 - 2",
+                    "profesor": "Carlos Hernández",
+                    "cupos_disponibles": 50,
+                    "inscritos": 45,
+                    "horario": [
+                        {
+                            "dia": "Martes",
+                            "hora_inicio": "16:30",
+                            "hora_fin": "17:50",
+                            "tipo": "Seminario",
+                            "sala": "MCSR - 301"
+                        },
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "16:30",
+                            "hora_fin": "17:50",
+                            "tipo": "Seminario",
+                            "sala": "MCSR - 301"
+                        }
+                    ]
+                }
+            ],
+            "pre_requisitos": []
+        },
+        {
+            "id": 13,
+            "nombre": "Programación II",
+            "descripcion": "Avanza en el desarrollo de habilidades de programación. Aprende conceptos más avanzados y técnicas para la construcción de software.",
+            "semestre": "Tercer semestre",
+            "area": "Área de formación específica",
+            "secciones": [
+                {
+                    "id": 1,
+                    "semestre_ofertado": "2024 - 1",
+                    "profesor": "Martín Sánchez",
+                    "cupos_disponibles": 50,
+                    "inscritos": 45,
+                    "horario": [
+                        {
+                            "dia": "Lunes",
+                            "hora_inicio": "14:00",
+                            "hora_fin": "15:20",
+                            "tipo": "Laboratorio",
+                            "sala": "MCSR - 201"
+                        },
+                        {
+                            "dia": "Miércoles",
+                            "hora_inicio": "14:00",
+                            "hora_fin": "15:20",
+                            "tipo": "Laboratorio",
+                            "sala": "MCSR - 201"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "semestre_ofertado": "2024 - 1",
+                    "profesor": "Laura Gutiérrez",
+                    "cupos_disponibles": 55,
+                    "inscritos": 50,
+                    "horario": [
+                        {
+                            "dia": "Martes",
+                            "hora_inicio": "16:30",
+                            "hora_fin": "17:50",
+                            "tipo": "Laboratorio",
+                            "sala": "MCSR - 301"
+                        },
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "16:30",
+                            "hora_fin": "17:50",
+                            "tipo": "Laboratorio",
+                            "sala": "MCSR - 301"
+                        }
+                    ]
+                }
+            ],
+            "pre_requisitos": [
+                {
+                    "id": 7,
+                    "nombre": "Programación I"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "nombre": "Taller de base de datos",
+            "descripcion": "Aplica tus conocimientos en bases de datos mediante la resolución de problemas prácticos. Desarrolla habilidades en diseño, implementación y gestión de bases de datos.",
+            "semestre": "Tercer semestre",
+            "area": "Área de formación específica",
+            "secciones": [
+                {
+                    "id": 1,
+                    "semestre_ofertado": "2024 - 1",
+                    "profesor": "Ana Rodríguez",
+                    "cupos_disponibles": 40,
+                    "inscritos": 35,
+                    "horario": [
+                        {
+                            "dia": "Lunes",
+                            "hora_inicio": "10:00",
+                            "hora_fin": "11:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        },
+                        {
+                            "dia": "Miércoles",
+                            "hora_inicio": "10:00",
+                            "hora_fin": "11:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "semestre_ofertado": "2024 - 1",
+                    "profesor": "Javier Morales",
+                    "cupos_disponibles": 45,
+                    "inscritos": 40,
+                    "horario": [
+                        {
+                            "dia": "Martes",
+                            "hora_inicio": "14:30",
+                            "hora_fin": "15:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        },
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "14:30",
+                            "hora_fin": "15:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        }
+                    ]
+                }
+            ],
+            "pre_requisitos": [
+                {
+                    "id": 8,
+                    "nombre": "Bases de datos"
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "nombre": "Ecuaciones diferenciales y análisis numérico",
+            "descripcion": "Estudia las ecuaciones diferenciales y métodos numéricos para resolver problemas prácticos en ingeniería. Desarrolla habilidades en el análisis y resolución de problemas matemáticos.",
+            "semestre": "Tercer semestre",
+            "area": "Área de formación básica",
+            "secciones": [
+                {
+                    "id": 1,
+                    "semestre_ofertado": "2024 - 1",
+                    "profesor": "Elena Gómez",
+                    "cupos_disponibles": 48,
+                    "inscritos": 40,
+                    "horario": [
+                        {
+                            "dia": "Lunes",
+                            "hora_inicio": "11:30",
+                            "hora_fin": "12:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        },
+                        {
+                            "dia": "Miércoles",
+                            "hora_inicio": "11:30",
+                            "hora_fin": "12:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "semestre_ofertado": "2024 - 1",
+                    "profesor": "Carlos Martínez",
+                    "cupos_disponibles": 52,
+                    "inscritos": 45,
+                    "horario": [
+                        {
+                            "dia": "Martes",
+                            "hora_inicio": "15:00",
+                            "hora_fin": "16:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        },
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "15:00",
+                            "hora_fin": "16:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        }
+                    ]
+                }
+            ],
+            "pre_requisitos": [
+                {
+                    "id": 9,
+                    "nombre": "Álgebra lineal"
+                },
+                {
+                    "id": 10,
+                    "nombre": "Cálculo integral"
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "nombre": "Cálculo multivariable",
+            "descripcion": "Explora los conceptos del cálculo aplicados a funciones de varias variables. Aborda temas como derivadas parciales, integrales múltiples y teorema de Green.",
+            "semestre": "Tercer semestre",
+            "area": "Área de formación básica",
+            "secciones": [
+                {
+                    "id": 1,
+                    "semestre_ofertado": "2024 - 1",
+                    "profesor": "Laura Sánchez",
+                    "cupos_disponibles": 50,
+                    "inscritos": 45,
+                    "horario": [
+                        {
+                            "dia": "Lunes",
+                            "hora_inicio": "14:00",
+                            "hora_fin": "15:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        },
+                        {
+                            "dia": "Miércoles",
+                            "hora_inicio": "14:00",
+                            "hora_fin": "15:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "semestre_ofertado": "2024 - 1",
+                    "profesor": "Javier Morales",
+                    "cupos_disponibles": 55,
+                    "inscritos": 50,
+                    "horario": [
+                        {
+                            "dia": "Martes",
+                            "hora_inicio": "16:30",
+                            "hora_fin": "17:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        },
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "16:30",
+                            "hora_fin": "17:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        }
+                    ]
+                }
+            ],
+            "pre_requisitos": [
+                {
+                    "id": 9,
+                    "nombre": "Álgebra lineal"
+                },
+                {
+                    "id": 10,
+                    "nombre": "Cálculo integral"
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "nombre": "Mecánica clásica",
+            "descripcion": "Estudia los principios fundamentales de la mecánica clásica. Aborda temas como cinemática, dinámica y energía en sistemas mecánicos.",
+            "semestre": "Tercer semestre",
+            "area": "Área de formación básica",
+            "secciones": [
+                {
+                    "id": 1,
+                    "semestre_ofertado": "2024 - 1",
+                    "profesor": "Carlos Ramírez",
+                    "cupos_disponibles": 48,
+                    "inscritos": 40,
+                    "horario": [
+                        {
+                            "dia": "Lunes",
+                            "hora_inicio": "11:30",
+                            "hora_fin": "12:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        },
+                        {
+                            "dia": "Miércoles",
+                            "hora_inicio": "11:30",
+                            "hora_fin": "12:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "semestre_ofertado": "2024 - 1",
+                    "profesor": "Ana Gutiérrez",
+                    "cupos_disponibles": 52,
+                    "inscritos": 45,
+                    "horario": [
+                        {
+                            "dia": "Martes",
+                            "hora_inicio": "15:00",
+                            "hora_fin": "16:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        },
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "15:00",
+                            "hora_fin": "16:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        }
+                    ]
+                }
+            ],
+            "pre_requisitos": [
+                {
+                    "id": 11,
+                    "nombre": "Física"
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "nombre": "Microeconomía",
+            "descripcion": "Analiza los principios de la microeconomía. Examina cómo las decisiones individuales afectan la asignación de recursos y el funcionamiento de los mercados.",
+            "semestre": "Tercer semestre",
+            "area": "Área de formación en gestión",
+            "secciones": [
+                {
+                    "id": 1,
+                    "semestre_ofertado": "2024 - 1",
+                    "profesor": "Elena Ramírez",
+                    "cupos_disponibles": 48,
+                    "inscritos": 40,
+                    "horario": [
+                        {
+                            "dia": "Lunes",
+                            "hora_inicio": "09:00",
+                            "hora_fin": "10:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        },
+                        {
+                            "dia": "Miércoles",
+                            "hora_inicio": "09:00",
+                            "hora_fin": "10:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "semestre_ofertado": "2024 - 1",
+                    "profesor": "Carlos Hernández",
+                    "cupos_disponibles": 52,
+                    "inscritos": 45,
+                    "horario": [
+                        {
+                            "dia": "Martes",
+                            "hora_inicio": "10:30",
+                            "hora_fin": "11:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        },
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "10:30",
+                            "hora_fin": "11:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        }
+                    ]
+                }
+            ],
+            "pre_requisitos": [
+                {
+                    "id": 5,
+                    "nombre": "Administración moderna"
+                },
+                {
+                    "id": 10,
+                    "nombre": "Cálculo integral"
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "nombre": "Comunicación eficaz",
+            "descripcion": "Desarrolla habilidades efectivas de comunicación oral y escrita. Aprende a expresar ideas de manera clara y persuasiva en diferentes contextos.",
+            "semestre": "Tercer semestre",
+            "area": "Área de formación general",
+            "secciones": [
+                {
+                    "id": 1,
+                    "semestre_ofertado": "2024 - 1",
+                    "profesor": "Ana Rodríguez",
+                    "cupos_disponibles": 45,
+                    "inscritos": 40,
+                    "horario": [
+                        {
+                            "dia": "Lunes",
+                            "hora_inicio": "14:00",
+                            "hora_fin": "15:20",
+                            "tipo": "Seminario",
+                            "sala": "MCSR - 201"
+                        },
+                        {
+                            "dia": "Miércoles",
+                            "hora_inicio": "14:00",
+                            "hora_fin": "15:20",
+                            "tipo": "Seminario",
+                            "sala": "MCSR - 201"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "semestre_ofertado": "2024 - 1",
+                    "profesor": "Javier Morales",
+                    "cupos_disponibles": 50,
+                    "inscritos": 45,
+                    "horario": [
+                        {
+                            "dia": "Martes",
+                            "hora_inicio": "16:30",
+                            "hora_fin": "17:50",
+                            "tipo": "Seminario",
+                            "sala": "MCSR - 301"
+                        },
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "16:30",
+                            "hora_fin": "17:50",
+                            "tipo": "Seminario",
+                            "sala": "MCSR - 301"
+                        }
+                    ]
+                }
+            ],
+            "pre_requisitos": []
+        },
+        {
+            "id": 20,
+            "nombre": "Termodinámica aplicada",
+            "descripcion": "Estudia los principios de la termodinámica y su aplicación en problemas prácticos. Comprende los conceptos de energía, trabajo y transferencia de calor.",
+            "semestre": "Cuarto semestre",
+            "area": "Área de formación específica",
+            "secciones": [
+                {
+                    "id": 1,
+                    "semestre_ofertado": "2024 - 2",
+                    "profesor": "Elena Gómez",
+                    "cupos_disponibles": 48,
+                    "inscritos": 40,
+                    "horario": [
+                        {
+                            "dia": "Lunes",
+                            "hora_inicio": "11:30",
+                            "hora_fin": "12:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        },
+                        {
+                            "dia": "Miércoles",
+                            "hora_inicio": "11:30",
+                            "hora_fin": "12:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "semestre_ofertado": "2024 - 2",
+                    "profesor": "Carlos Martínez",
+                    "cupos_disponibles": 52,
+                    "inscritos": 45,
+                    "horario": [
+                        {
+                            "dia": "Martes",
+                            "hora_inicio": "15:00",
+                            "hora_fin": "16:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        },
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "15:00",
+                            "hora_fin": "16:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        }
+                    ]
+                }
+            ],
+            "pre_requisitos": [
+                {
+                    "id": 2,
+                    "nombre": "Química aplicada de a la ingeniería"
+                },
+                {
+                    "id": 10,
+                    "nombre": "Cálculo integral"
+                },
+                {
+                    "id": 17,
+                    "nombre": "Mecánica clásica"
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "nombre": "Taller de investigación para la ingeniería",
+            "descripcion": "Desarrolla habilidades de investigación aplicada a la ingeniería. Aprende métodos y técnicas para llevar a cabo proyectos de investigación en tu campo de estudio.",
+            "semestre": "Cuarto semestre",
+            "area": "Área de formación específica",
+            "secciones": [
+                {
+                    "id": 1,
+                    "semestre_ofertado": "2024 - 2",
+                    "profesor": "Elena Gómez",
+                    "cupos_disponibles": 48,
+                    "inscritos": 40,
+                    "horario": [
+                        {
+                            "dia": "Lunes",
+                            "hora_inicio": "14:00",
+                            "hora_fin": "15:20",
+                            "tipo": "Seminario",
+                            "sala": "MCSR - 201"
+                        },
+                        {
+                            "dia": "Miércoles",
+                            "hora_inicio": "14:00",
+                            "hora_fin": "15:20",
+                            "tipo": "Seminario",
+                            "sala": "MCSR - 201"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "semestre_ofertado": "2024 - 2",
+                    "profesor": "Carlos Martínez",
+                    "cupos_disponibles": 52,
+                    "inscritos": 45,
+                    "horario": [
+                        {
+                            "dia": "Martes",
+                            "hora_inicio": "15:00",
+                            "hora_fin": "16:20",
+                            "tipo": "Seminario",
+                            "sala": "MCSR - 301"
+                        },
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "15:00",
+                            "hora_fin": "16:20",
+                            "tipo": "Seminario",
+                            "sala": "MCSR - 301"
+                        }
+                    ]
+                }
+            ],
+            "pre_requisitos": [
+                {
+                    "id": 2,
+                    "nombre": "Química aplicada de a la ingeniería"
+                },
+                {
+                    "id": 10,
+                    "nombre": "Álgebra lineal"
+                },
+                {
+                    "id": 17,
+                    "nombre": "Mecánica clásica"
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "nombre": "Estructura de datos",
+            "descripcion": "Explora las estructuras de datos y algoritmos esenciales para el desarrollo de software. Adquiere conocimientos fundamentales para la manipulación eficiente de datos.",
+            "semestre": "Cuarto semestre",
+            "area": "Área de formación específica",
+            "secciones": [
+                {
+                    "id": 1,
+                    "semestre_ofertado": "2024 - 2",
+                    "profesor": "Ana Rodríguez",
+                    "cupos_disponibles": 48,
+                    "inscritos": 40,
+                    "horario": [
+                        {
+                            "dia": "Lunes",
+                            "hora_inicio": "11:30",
+                            "hora_fin": "12:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        },
+                        {
+                            "dia": "Miércoles",
+                            "hora_inicio": "11:30",
+                            "hora_fin": "12:50",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 201"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "semestre_ofertado": "2024 - 2",
+                    "profesor": "Javier Morales",
+                    "cupos_disponibles": 52,
+                    "inscritos": 45,
+                    "horario": [
+                        {
+                            "dia": "Martes",
+                            "hora_inicio": "15:00",
+                            "hora_fin": "16:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        },
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "15:00",
+                            "hora_fin": "16:20",
+                            "tipo": "Cátedra",
+                            "sala": "MCSR - 301"
+                        }
+                    ]
+                }
+            ],
+            "pre_requisitos": [
+                {
+                    "id": 13,
+                    "nombre": "Programación II"
+                }
+            ]
+        },
+        {
+            "id": 34,
+            "nombre": "Ingeniería de software",
+            "descripcion": "Curso introductorio de a la Ingeniería de software y UML",
+            "semestre": "Primer semestre",
+            "area": "Area de formación específica",
+            "secciones": [
+                {
+                    "id": 1,
+                    "semestre_ofertado": "2023 - 2",
+                    "profesor": "Armando Tamponi",
+                    "cupos_disponibles": 60,
+                    "inscritos": 45,
+                    "horario": [
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "08:00",
+                            "hora_fin": "9:10",
+                            "tipo": "Catedra",
+                            "sala": "MCSR - 308"
+                        },
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "09:30",
+                            "hora_fin": "10:40",
+                            "tipo": "Catedra",
+                            "sala": "MCSR - 308"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "semestre": "2023 - 2",
+                    "profesor": "Alonso Berrios",
+                    "cupos_disponibles": 60,
+                    "inscritos": 50,
+                    "horario": [
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "08:00",
+                            "hora_fin": "9:10",
+                            "sala": "MCSR - 408"
+                        },
+                        {
+                            "dia": "Jueves",
+                            "hora_inicio": "09:30",
+                            "hora_fin": "10:40",
+                            "sala": "MCSR - 408"
+                        }
+                    ]
+                }
+            ],
+            "pre_requisitos": [
+                {
+                    "id": 14,
+                    "nombre": "Taller de base de datos"
+                }
+            ]
+        }
+    ]
+}
