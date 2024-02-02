@@ -15,6 +15,6 @@ const isActive = direction === pathname || direction === pathname.replace(/\/$/,
 		class=`group flex items-center rounded-3xl p-2 opacity-90 transition-all ease-in-out
 			${ isActive ? 'bg-primary-500 text-white': 'hover:bg-primary-200' }`>
 		<slot class="text-white" />
-		<span class="ml-3">{name}</span>
+		<span class="ml-3 font-bold text-black/80">{name}</span>
 	</a>
 </li>

@@ -13,7 +13,7 @@ import BooksIcon from '../icons/Books.astro'
 			<BooksIcon class="mr-1" />Epico</span
 		>
 	</div>
-	<div class="flex-1 rounded-3xl bg-white px-3 py-5 shadow-sm">
+	<div class="flex flex-1 flex-col justify-between rounded-3xl bg-white px-3 py-5 shadow-sm">
 		<ul class="space-y-2">
 			<MenuItem name="Menú principal" direction="/dashboard">
 				<CalendarioIcon class="h-auto text-neutral-800" />
@@ -37,5 +37,22 @@ import BooksIcon from '../icons/Books.astro'
 				<CalendarioIcon class="h-auto text-neutral-800" />
 			</MenuItem>
 		</ul>
+		<a
+			href="/"
+			class="group flex items-center rounded-3xl p-2 opacity-90 transition-all ease-in-out">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="h-6 w-6 text-neutral-800 group-hover:text-primary-500"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke="currentColor">
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="2"
+					d="M6 18L18 6M6 6l12 12"></path>
+				<span class="ml-3 font-bold text-black/80">Cerrar sessión</span>
+			</svg>
+		</a>
 	</div>
 </aside>
